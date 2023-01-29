@@ -8,6 +8,8 @@ ruby '3.0.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.7'
 
+gem 'dotenv-rails'
+
 # grape
 gem 'grape'
 gem 'grape-entity'
