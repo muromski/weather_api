@@ -10,7 +10,7 @@ class CurrentWeather
   end
 
   def self.serialize(response)
-    JSON.parse(response.read_body).first['Temperature']['Metric']['Value']
+    JSON.parse(response.read_body).first['Temperature']['Metric']['Value'] if response
   end
 
   private_class_method :serialize

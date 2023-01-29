@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dataservice.accuweather.com/currentconditions/v1/28580?apikey=tBI526Xxymq7tSiAyqd5GLNa7X2eJfUh&details=false&language=en-us
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - dataservice.accuweather.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 29 Jan 2023 12:05:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '483'
+      Connection:
+      - keep-alive
+      Server:
+      - Microsoft-IIS/10.0
+      Ratelimit-Limit:
+      - '50'
+      Ratelimit-Remaining:
+      - '38'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '3628800'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=594
+      Expires:
+      - Sun, 29 Jan 2023 12:14:58 GMT
+      Akamai-Grn:
+      - 0.3c992e17.1674993904.4464c295
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - deflate;q=0.6
+      - gzip;q=1.0
+      - identity;q=0.3
+      Host:
+      - api.accuweather.com
+      User-Agent:
+      - Ruby
+      X-Forwarded-For:
+      - 46.53.245.227
+      X-Forwarded-Port:
+      - '80'
+      X-Forwarded-Proto:
+      - http
+    body:
+      encoding: UTF-8
+      string: '[{"LocalObservationDateTime":"2023-01-29T14:53:00+03:00","EpochTime":1674993180,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-2.2,"Unit":"C","UnitType":17},"Imperial":{"Value":28.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us","Link":"http://www.accuweather.com/en/by/minsk/28580/current-weather/28580?lang=en-us"}]'
+  recorded_at: Sun, 29 Jan 2023 12:05:04 GMT
+recorded_with: VCR 6.1.0
