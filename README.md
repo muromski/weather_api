@@ -43,7 +43,7 @@ Run tests
 docker-compose exec app bin/rails spec
 ~~~
 
-![screenshot](https://i.ibb.co/cr3Zvnv/image.png)
+![screenshot](https://i.ibb.co/c6pnfsC/2023-01-30-04-10-47.png)
 
 
 RPS metrics are located in the `metrics` folder
