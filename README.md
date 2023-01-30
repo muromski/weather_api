@@ -1,24 +1,52 @@
-# README
+ 
+# Weather API
+Test task for Middle Ruby on Rails Developer position 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Technologies
 
-Things you may want to cover:
+Rails 6+, Grape, Rufus, RSpec, VCR, Swagger, Docker, Postman
 
-* Ruby version
+Third-party API - https://developer.accuweather.com/apis.
 
-* System dependencies
+## Run Locally  
 
-* Configuration
+Clone the project  
 
-* Database creation
+~~~bash  
+git clone git@github.com:muromski/weather_api.git
+~~~
 
-* Database initialization
+Go to the project directory  
 
-* How to run the test suite
+~~~bash  
+cd weather_api
+~~~
 
-* Services (job queues, cache servers, search engines, etc.)
+Rename `.env.example` file to `.env`
 
-* Deployment instructions
+You should have credentials to become an access to third-party API. You can get your own API_KEY after registration https://developer.accuweather.com/
 
-* ...
+
+Build docker-compose  
+
+~~~bash  
+docker-compose build app
+~~~
+
+Run docker-compose 
+~~~bash  
+docker-compose up -d
+~~~
+
+Run tests
+~~~bash  
+docker-compose exec app bin/rails spec
+~~~
+
+![screenshot](https://i.ibb.co/cr3Zvnv/image.png)
+
+
+RPS metrics are located in the `metrics` folder
+
+The Postman collection for API testing is located at the root of the project
+
