@@ -50,3 +50,6 @@ RPS metrics are located in the `metrics` folder
 
 The Postman collection for API testing is located at the root of the project
 
+Swagger documentation is located at `http://localhost:3000/swagger#`
+
+![screenshot](https://i.ibb.co/VvS1Yfd/2023-01-30-08-19-46.png)
